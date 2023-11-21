@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Seu Nome - Portfólio</title>
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <nav>
-                <ul>
+                <ul class="toggle-language">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#experience">Experiência</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#education">Educação</a></li>
                     <li><a href="#contact">Contato</a></li>
+                    <li><a href="#certifications">Certificações</a></li>
+                    <li><a href="#publications">Publicações</a></li>
+                    <li><a href="#languages">Idiomas</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="content">
+        <div class="content toggle-language">
             <header id="home">
-                <ha>ATENCAO O TRABALHO ESTA EM DESEVOLVIMENTO NAO ESTA COMPLETO E APENAS A BASE PARA EU IR VERNDO COMO MODIFICAR CADA PARTE </ha>
-                <h1>Oi me chamo Jean Pierre Antunes</h1>
-                <p>Programador</p>
+                <h4 class="toggle-language">ATENÇÃO: O TRABALHO ESTÁ EM DESENVOLVIMENTO, NÃO ESTÁ COMPLETO E SERVE
+                    APENAS COMO BASE PARA EU IR VENDO COMO MODIFICAR CADA PARTE</h4>
+                <h1 class="toggle-language">Oi, meu nome é Jean Pierre Antunes</h1>
+                <p class="toggle-language">Programador</p>
             </header>
 
-            <section id="projects">
+            <section id="projects" class="toggle-language">
                 <h2>Projetos</h2>
-                <div class="project">
-                    <h3>trabalho de avaliacao</h3>
-                    <p>Trabalho teórico da montagem de um pc</p>
-                    <a href="https://github.com/antunes478/trabalho-de-avaliacao">Código Fonte</a>
-                    <a href="https://trabalho-de-avaliacao.vercel.app">Demo</a>
+                <div class="project toggle-language">
+                    <h3>Trabalho de Avaliação</h3>
+                    <p>Trabalho teórico da montagem de um PC</p>
+                    <a href="https://github.com/antunes478/trabalho-de-avaliacao" class="toggle-language">Código
+                        Fonte</a>
+                    <a href="https://trabalho-de-avaliacao.vercel.app" class="toggle-language">Demo</a>
                 </div>
-                <div class="project">
-                    <h3>Utilitarios</h3>
-                    <p>Nesse projeto o professor nos pediu para pesquisar e fazer um trabalho de um certo tópico</p>
-                    <a href="https://github.com/antunes478/utilitarios">Código Fonte</a>
-                    <a href="https://utilitarios-bice.vercel.app">Demo</a>
+                <div class="project toggle-language">
+                    <h3>Utilitários</h3>
+                    <p>Nesse projeto, o professor nos pediu para pesquisar e fazer um trabalho de um certo tópico</p>
+                    <a href="https://github.com/antunes478/utilitarios" class="toggle-language">Código Fonte</a>
+                    <a href="https://utilitarios-bice.vercel.app" class="toggle-language">Demo</a>
                 </div>
                 <!-- Adicione mais projetos conforme necessário -->
             </section>
 
-            <section id="experience">
+            <section id="experience" class="toggle-language">
                 <h2>Experiência</h2>
-                <div class="job">
-                    <h3>Desenvolvedor de trabalhos do curso de programação</h3>
+                <div class="job toggle-language">
+                    <h3>Desenvolvedor de Trabalhos do Curso de Programação</h3>
                     <p>Responsável pelo futuro servidor da turma PI1</p>
                 </div>
                 <!-- Adicione mais experiências conforme necessário -->
             </section>
 
-            <section id="skills">
+            <section id="skills" class="toggle-language">
                 <h2>Habilidades</h2>
-                <ul>
+                <ul class="toggle-language">
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>JavaScript</li>
@@ -64,23 +71,50 @@
                 </ul>
             </section>
 
-            <section id="education">
+            <section id="education" class="toggle-language">
                 <h2>Educação</h2>
-                <p>Atualmente realizando o curso de programação na escola profissional do Fundão</p>
+                <p class="toggle-language">Atualmente realizando o curso de programação na escola profissional do Fundão
+                </p>
             </section>
 
-            <section id="contact">
+            <section id="certifications" class="toggle-language">
+                <h2>Certificações</h2>
+                <ul class="toggle-language">
+                    <li>Nome da Certificação - Instituição Emitente (opcional)</li>
+                    <!-- Adicione mais certificações conforme necessário -->
+                </ul>
+            </section>
+
+            <section id="publications" class="toggle-language">
+                <h2>Publicações</h2>
+                <ul class="toggle-language">
+                    <li>Título da Publicação - Nome da Revista ou Conferência (opcional)</li>
+                    <!-- Adicione mais publicações conforme necessário -->
+                </ul>
+            </section>
+
+            <section id="languages" class="toggle-language">
+                <h2>Idiomas</h2>
+                <ul class="toggle-language">
+                    <li>Português (nativo)</li>
+                    <li>Inglês (avançado)</li>
+                    <!-- Adicione mais idiomas conforme necessário -->
+                </ul>
+            </section>
+
+            <section id="contact" class="toggle-language">
                 <h2>Contato</h2>
-                <p>jeanpierreantunes18@gmail.com</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-nome" target="_blank">Seu Nome</a></p>
+                <p class="toggle-language">jeanpierreantunes18@gmail.com</p>
+                <p class="toggle-language">LinkedIn: <a href="https://www.linkedin.com/in/seu-nome" target="_blank"
+                        class="toggle-language">Seu Nome</a></p>
             </section>
 
-            <footer>
-                <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+            <footer class="toggle-language">
+                <p class="toggle-language">&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
             </footer>
         </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
+
 </html>
