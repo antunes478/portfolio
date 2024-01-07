@@ -1,120 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Seu Nome - Portfólio</title>
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicione o link para a Font Awesome (certifique-se de ter uma conexão com a internet) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XX74EYPtoMnZyPc8BNEvIkNDaCzo7r0Mh3oZ18rg/U9nfH8FpxGJ/ZNlDShSV1t5WefnxtDfNl5kvSQlIMK8eg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <nav>
-                <ul class="toggle-language">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#experience">Experiência</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#education">Educação</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><a href="#certifications">Certificações</a></li>
-                    <li><a href="#publications">Publicações</a></li>
-                    <li><a href="#languages">Idiomas</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#estudos">Estudos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim </h2>
+            <div class="foto-autor-container">
+                <img src="data:image/jpeg;base64,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" alt="Foto do autor" class="foto-autor">
+            </div>
+            <p>Meu nome é Jean Pierre, tenho 19 anos e sou brasileiro.</p>
+            <p>Aqui você encontra uma lista de minhas habilidades profissionais:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <p>Além disso, logo aseguir podes verificar meus projetosprofissionais.</p>
+        </section>
 
-        <div class="content toggle-language">
-            <header id="home">
-                <h4 class="toggle-language">ATENÇÃO: O TRABALHO ESTÁ EM DESENVOLVIMENTO, NÃO ESTÁ COMPLETO E SERVE
-                    APENAS COMO BASE PARA EU IR VENDO COMO MODIFICAR CADA PARTE</h4>
-                <h1 class="toggle-language">Oi, meu nome é Jean Pierre Antunes</h1>
-                <p class="toggle-language">Programador</p>
-            </header>
-
-            <section id="projects" class="toggle-language">
-                <h2>Projetos</h2>
-                <div class="project toggle-language">
-                    <h3>Trabalho de Avaliação</h3>
-                    <p>Trabalho teórico da montagem de um PC</p>
-                    <a href="https://github.com/antunes478/trabalho-de-avaliacao" class="toggle-language">Código
-                        Fonte</a>
-                    <a href="https://trabalho-de-avaliacao.vercel.app" class="toggle-language">Demo</a>
-                </div>
-                <div class="project toggle-language">
-                    <h3>Utilitários</h3>
-                    <p>Nesse projeto, o professor nos pediu para pesquisar e fazer um trabalho de um certo tópico</p>
-                    <a href="https://github.com/antunes478/utilitarios" class="toggle-language">Código Fonte</a>
-                    <a href="https://utilitarios-bice.vercel.app" class="toggle-language">Demo</a>
-                </div>
-                <!-- Adicione mais projetos conforme necessário -->
-            </section>
-
-            <section id="experience" class="toggle-language">
-                <h2>Experiência</h2>
-                <div class="job toggle-language">
-                    <h3>Desenvolvedor de Trabalhos do Curso de Programação</h3>
-                    <p>Responsável pelo futuro servidor da turma PI1</p>
-                </div>
-                <!-- Adicione mais experiências conforme necessário -->
-            </section>
-
-            <section id="skills" class="toggle-language">
-                <h2>Habilidades</h2>
-                <ul class="toggle-language">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <!-- Adicione mais habilidades conforme necessário -->
-                </ul>
-            </section>
-
-            <section id="education" class="toggle-language">
-                <h2>Educação</h2>
-                <p class="toggle-language">Atualmente realizando o curso de programação na escola profissional do Fundão
-                </p>
-            </section>
-
-            <section id="certifications" class="toggle-language">
-                <h2>Certificações</h2>
-                <ul class="toggle-language">
-                    <li></li>
-                    <!-- Adicione mais certificações conforme necessário -->
-                </ul>
-            </section>
-
-            <section id="publications" class="toggle-language">
-                <h2>Publicações</h2>
-                <ul class="toggle-language">
-                    <li></li>
-                    <!-- Adicione mais publicações conforme necessário -->
-                </ul>
-            </section>
-
-            <section id="languages" class="toggle-language">
-                <h2>Idiomas</h2>
-                <ul class="toggle-language">
-                    <li>Português</li>
-                    <li>Inglês (iniciante)</li>
-                    <!-- Adicione mais idiomas conforme necessário -->
-                </ul>
-            </section>
-
-            <section id="contact" class="toggle-language">
-                <h2>Contato</h2>
-                <p class="toggle-language">jeanpierreantunes18@gmail.com</p>
-                <p class="toggle-language">LinkedIn: <a href="https://www.linkedin.com/in/seu-nome" target="_blank"
-                        class="toggle-language">Seu Nome</a></p>
-            </section>
-
-            <footer class="toggle-language">
-                <p class="toggle-language">&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
-            </footer>
-        </div>
-    </div>
-
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p>Aqui você encontra uma lista de meus projetos profissionais.</p>
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+            <a href="https://github.com/seu-usuario/projeto1" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+            <a href="https://github.com/seu-usuario/projeto2" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3.</p>
+            <a href="https://github.com/seu-usuario/projeto3" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 4</h3>
+            <p>Descrição do projeto 4.</p>
+            <a href="https://github.com/seu-usuario/projeto4" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 5</h3>
+            <p>Descrição do projeto 5.</p>
+            <a href="https://github.com/seu-usuario/projeto5" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 6</h3>
+            <p>Descrição do projeto 6.</p>
+            <a href="https://github.com/seu-usuario/projeto6" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 7</h3>
+            <p>Descrição do projeto 7.</p>
+            <a href="https://github.com/seu-usuario/projeto7" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 8</h3>
+            <p>Descrição do projeto 8.</p>
+            <a href="https://github.com/seu-usuario/projeto8" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 9</h3>
+            <p>Descrição do projeto 9.</p>
+            <a href="https://github.com/seu-usuario/projeto9" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 10</h3>
+            <p>Descrição do projeto 10.</p>
+            <a href="https://github.com/seu-usuario/projeto10" target="_blank">Veja no GitHub</a>
+        </li>
+        <li>
+            <h3>Projeto 11</h3>
+            <p>Descrição do projeto 11.</p>
+            <a href="https://github.com/seu-usuario/projeto11" target="_blank">Veja no GitHub</a>
+        </li>
+    </ul>
+</section>
+        </section>
+        <section id="estudos">
+            <h2>Estudos</h2>
+            <p>Aqui você encontra uma lista de meus estudos e cursos.</p>
+            <!-- Insira aqui as informações sobre seus estudos -->
+            <p>Atualmente, estudo programação na Escola Profissional do Fundão, e meu foco principal é em HTML, CSS e JavaScript.</p>
+        </section>
+    
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>E-mail: <a href="mailto:seu-email@example.com">seu-email@example.com</a></p>
+            <p>Telefone: Seu Número</p>
+            <p>
+                <a href="https://gmail.com" target="_blank" title="Gmail"><i class="fab fa-google"></i></a>
+                <a href="https://whatsapp.com" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </section>
+    </main>
 </body>
-
 </html>
